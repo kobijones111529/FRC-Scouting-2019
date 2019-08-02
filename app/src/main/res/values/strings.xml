@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scouting</string>
+    <string name="team_number_hint">Team Number</string>
+    <string-array name="match_type_options">
+        <item>Qualification</item>
+        <item>Playoff</item>
+        <item>Practice</item>
+    </string-array>
+</resources>
