@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Scouting</string>
+    <string name="event_code_hint">Event Code</string>
+    <string name="match_number_hint">Match Number</string>
     <string name="team_number_hint">Team Number</string>
     <string-array name="match_type_options">
         <item>Qualification</item>

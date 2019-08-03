@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/action_bar_toolbar"
         android:layout_width="match_parent"
@@ -16,9 +15,7 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
     </androidx.appcompat.widget.Toolbar>
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -27,10 +24,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
         <EditText
+            android:id="@+id/event_code"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:hint="Event Code"
-            android:inputType="textCapCharacters"
+            android:hint="@string/event_code_hint"
+            android:inputType="textCapCharacters|textNoSuggestions"
             android:layout_gravity="center"
             android:importantForAutofill="no"/>
         <Spinner
@@ -42,14 +40,16 @@
             tools:listitem="@layout/sample_text_view">
         </Spinner>
         <EditText
+            android:id="@+id/match_number"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:hint="Match Number"
+            android:hint="@string/match_number_hint"
             android:inputType="number"
             android:layout_marginTop="40dp"
             android:layout_gravity="center"
             android:importantForAutofill="no"/>
         <EditText
+            android:id="@+id/team_number"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:hint="@string/team_number_hint"
@@ -58,5 +58,4 @@
             android:layout_gravity="center"
             android:importantForAutofill="no"/>
     </LinearLayout>
-
 </LinearLayout>
